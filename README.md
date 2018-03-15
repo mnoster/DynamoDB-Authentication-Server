@@ -1,11 +1,16 @@
 # DynamoDB-Rest-Server 
-**Authentication and User Creation Server integrated with DynamoDB
+Generic Pluggable DynamoDB REST API with user auth, creation, update & delete functionality
 
 ### Development
 
- start node server: `npm start`
+- Add your AWS credentials to `connect.config.json`
+ 
+- Create DynamoDB table called 'Users'
+ 
+- Add fields specified below
 
- add your AWS credentials to `connect.config.json`
+- Start node server: `npm start`
+
 
 ___
 
