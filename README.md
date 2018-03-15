@@ -3,7 +3,9 @@ Generic Pluggable DynamoDB REST API with user auth, creation, update & delete fu
 
 ### Development
 
-- Add your AWS credentials to `connect.config.json`
+- Clone Repo:  `git clone https://github.com/mnoster/DynamoDB-Rest-Server.git`
+
+- Add your AWS credentials to `config/connect.config.json`
  
 - Create DynamoDB table called 'Users'
  
