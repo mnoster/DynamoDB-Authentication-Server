@@ -1,10 +1,11 @@
 const AWS = require("aws-sdk")
-const settings = require('../../config/connect.config.json')
-const config = require('../../config/secret.config.json')
 const express = require('express')
 const router = express.Router()
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
+const VerifyToken = require("./VerifyToken")
+const settings = require('../../config/connect.config.json')
+const config = require('../../config/secret.config.json')
 
 AWS.config = settings
 const bodyParser = require('body-parser')
@@ -28,7 +29,7 @@ const _api = {
                     if (item.Count > 0 && is_valid) {
                         const token = jwt.sign(
                             { 
-                                id: `${req.body.username}#%#${req.body.password}`
+                                id: `${req.body.email}|#%#|${req.body.password}`
                             }, 
                             config.secret, 
                             {
@@ -163,9 +164,9 @@ const RequestError = (res) => {
 // Route Assignment
 
 router.post("/user/auth", _api.authenticate_user)
-router.post("/user/get", _api.get_user)
+router.post("/user/get", VerifyToken, _api.get_user)
 router.post("/user/create", _api.create_user)
-router.put("/user/update", _api.update_user)
-router.delete("/user/delete", _api.delete_user)
+router.put("/user/update", VerifyToken, _api.update_user)
+router.delete("/user/delete", VerifyToken, _api.delete_user)
 
 module.exports = router;
