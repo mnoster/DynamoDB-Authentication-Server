@@ -7,7 +7,7 @@ Generic Pluggable DynamoDB REST API with user auth, creation, update & delete fu
  
 - Create DynamoDB table called 'Users'
  
-- Add fields specified below
+- Add columns to your table as specified below
 
 - Start node server: `npm start`
 
