@@ -1,0 +1,29 @@
+{
+  "name": "dls-auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdChain/DLS-Auth.git"
+  },
+  "author": "Nicholas Porter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdChain/DLS-Auth/issues"
+  },
+  "homepage": "https://github.com/AdChain/DLS-Auth#readme",
+  "dependencies": {
+    "aws-sdk": "^2.209.0",
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "helmet": "^3.12.0",
+    "http": "^0.0.0",
+    "jsonwebtoken": "^8.2.0",
+    "path": "^0.12.7"
+  }
+}
