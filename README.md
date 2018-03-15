@@ -3,9 +3,9 @@
 
 ### Development
 
-#### start node server: `npm start`
+ start node server: `npm start`
 
-#### add your AWS credentials to `connect.config.json`
+ add your AWS credentials to `connect.config.json`
 
 ___
 
