@@ -3,19 +3,21 @@
 
 ### Development
 
-start node server: `npm start`
+** start node server: `npm start`
 
-add your AWS credentials to `connect.config.json`
-
-DynamoDB schema
-
-**Table Name: Users
-**Table Columns: email, password, first_name, last_name, date
-   - email field is the **primary key
+** add your AWS credentials to `connect.config.json`
 
 ___
 
-**Endpoints
+### DynamoDB schema
+
+** Table Name: Users
+** Table Columns: email, password, first_name, last_name, date
+   - email field is the primary key
+
+___
+
+** Endpoints
 
 - user_authentication
 - user_create
@@ -28,7 +30,7 @@ ___
 #### uses bcrypt password protection
 
 
- 
+
 
 
 
