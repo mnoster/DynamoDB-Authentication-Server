@@ -32,6 +32,11 @@ ___
 - user_update
 - logout
 
+#### Request Headers
+- x-access-token : 'json web token here'
+- Content-Type : application/json
+
+
 #### uses jwt session
 #### uses bcrypt password protection
 
