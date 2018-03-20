@@ -1,5 +1,6 @@
 # DynamoDB-Rest-Server 
-Generic Pluggable DynamoDB REST API with user auth, creation, update & delete functionality
+Generic Pluggable DynamoDB REST API with user auth, creation, update & delete functionality.
+JWT integrated.
 
 ### Development
 
@@ -27,12 +28,12 @@ ___
 
 #### Endpoints
 
-- user_authentication
-- user_create
-- user_update 
-- user_get
-- user_update
-- logout
+- /user_authentication
+- /user_create
+- /user_update 
+- /user_get
+- /user_update
+- /logout
 
 #### Request Headers
 - x-access-token : 'json web token here'
