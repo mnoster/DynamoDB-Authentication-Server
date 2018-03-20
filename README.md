@@ -1,5 +1,6 @@
 # DynamoDB-Rest-Server 
 Generic Pluggable DynamoDB REST API with user auth, creation, update & delete functionality.
+
 JWT integrated.
 
 ### Development
