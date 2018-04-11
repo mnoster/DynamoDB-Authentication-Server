@@ -41,6 +41,9 @@ ___
 - Content-Type : application/json
 
 
+#### Middleware
+- VerifyToken (JWT check)
+
 #### uses jwt session
 #### uses bcrypt password protection
 
